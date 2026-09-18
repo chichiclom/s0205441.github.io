@@ -1,0 +1,392 @@
+<header>
+    <h1>Задание 1</h1>
+    <p>Разработка пользовательского Web-интерфейса</p>
+</header>
+
+<main>
+
+    <!-- ==================================================
+         СПИСОК ГИПЕРССЫЛОК
+         ================================================== -->
+
+    <section>
+        <h2>Список гиперссылок</h2>
+
+        <ul>
+
+            <!-- 1. Абсолютная ссылка на главную страницу kubsu.ru -->
+            <li>
+                <a href="http://kubsu.ru/">
+                    Абсолютная ссылка на главную страницу kubsu.ru
+                </a>
+            </li>
+
+            <!-- 2. Абсолютная HTTPS-ссылка на главную страницу kubsu.ru -->
+            <li>
+                <a href="https://kubsu.ru/">
+                    Абсолютная HTTPS-ссылка на главную страницу kubsu.ru
+                </a>
+            </li>
+
+            <!-- 3. Ссылка-изображение -->
+            <li>
+                <p>Ссылка-изображение:</p>
+
+                <a href="https://kubsu.ru/">
+                    <img
+                        src="https://www.kubsu.ru/sites/default/files/insert/page/gerb_kubgu.png"
+                        alt="Герб КубГУ — ссылка на сайт КубГУ"
+                        width="100">
+                </a>
+            </li>
+
+            <!-- 4. Сокращенная ссылка на внутреннюю страницу -->
+            <li>
+                <a href="/education">
+                    Сокращенная ссылка на внутреннюю страницу
+                </a>
+            </li>
+
+            <!-- 5. Сокращенная ссылка на главную страницу -->
+            <li>
+                <a href="/">
+                    Сокращенная ссылка на главную страницу
+                </a>
+            </li>
+
+            <!-- 6. Ссылка на фрагмент текущей страницы -->
+            <li>
+                <a href="#form">
+                    Ссылка на фрагмент текущей страницы (форма)
+                </a>
+            </li>
+
+            <!-- 7. Ссылка с тремя параметрами в URL -->
+            <li>
+                <a href="https://example.com/?param1=value1&amp;param2=value2&amp;param3=value3">
+                    Ссылка с тремя параметрами в URL
+                </a>
+            </li>
+
+            <!-- 8. Ссылка с параметром id в URL -->
+            <li>
+                <a href="https://example.com/?id=123">
+                    Ссылка с параметром id в URL
+                </a>
+            </li>
+
+            <!-- 9. Относительная ссылка на страницу в текущем каталоге -->
+            <li>
+                <a href="./page.html">
+                    Относительная ссылка на страницу в текущем каталоге
+                </a>
+            </li>
+
+            <!-- 10. Относительная ссылка на страницу в каталоге about -->
+            <li>
+                <a href="./about/page.html">
+                    Относительная ссылка на страницу в каталоге about
+                </a>
+            </li>
+
+            <!-- 11. Относительная ссылка на страницу уровнем выше -->
+            <li>
+                <a href="../page.html">
+                    Относительная ссылка на страницу уровнем выше
+                </a>
+            </li>
+
+            <!-- 12. Относительная ссылка на страницу двумя уровнями выше -->
+            <li>
+                <a href="../../page.html">
+                    Относительная ссылка на страницу двумя уровнями выше
+                </a>
+            </li>
+
+            <!-- 13. Контекстная ссылка в тексте абзаца -->
+            <li>
+                <p>
+                    Кубанский государственный университет имеет
+                    <a href="https://kubsu.ru/">
+                        официальный сайт
+                    </a>,
+                    на котором можно ознакомиться с информацией об университете.
+                </p>
+            </li>
+
+            <!-- 14. Ссылка на фрагмент страницы стороннего сайта -->
+            <li>
+                <a href="https://ru.wikipedia.org/wiki/HTML#HTML5">
+                    Ссылка на фрагмент страницы стороннего сайта
+                </a>
+            </li>
+
+            <!-- 15. Ссылки из прямоугольной и круглой областей изображения -->
+            <li><p>
+                    Изображение с прямоугольной и круглой активными областями:
+                </p>
+
+                <img
+                    src="https://www.kubsu.ru/sites/default/files/insert/page/gerb_kubgu.png"
+                    alt="Изображение с активными областями"
+                    width="300"
+                    height="300"
+                    usemap="#image-map">
+
+                <map name="image-map">
+                    <area
+                        shape="rect"
+                        coords="0,0,140,140"
+                        href="https://kubsu.ru/"
+                        alt="Прямоугольная ссылка на КубГУ">
+
+                    <area
+                        shape="circle"
+                        coords="220,220,60"
+                        href="https://www.wikipedia.org/"
+                        alt="Круглая ссылка на Wikipedia">
+                </map>
+            </li>
+
+            <!-- 16. Ссылка с пустым href -->
+            <li>
+                <a href="">
+                    Ссылка с пустым href
+                </a>
+            </li>
+
+            <!-- 17. Ссылка без href -->
+            <li>
+                <a>
+                    Ссылка без href
+                </a>
+            </li>
+
+            <!-- 18. Ссылка, по которой запрещен переход поисковикам -->
+            <li>
+                <a href="https://example.com/" rel="nofollow">
+                    Ссылка, по которой запрещен переход поисковикам
+                </a>
+            </li>
+
+            <!-- 19. Ссылка, запрещенная для индексации поисковиками -->
+            <li>
+                <a href="https://example.com/" rel="noindex">
+                    Ссылка, запрещенная для индексации поисковиками
+                </a>
+            </li>
+
+            <!-- 20. Нумерованный список ссылок с подписями title -->
+            <li>
+                <p>Нумерованный список ссылок с title:</p>
+
+                <ol>
+                    <li>
+                        <a
+                            href="https://kubsu.ru/"
+                            title="Официальный сайт КубГУ">
+                            Сайт КубГУ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.wikipedia.org/"
+                            title="Свободная энциклопедия Wikipedia">
+                            Wikipedia
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.google.com/"
+                            title="Поисковая система Google">
+                            Google
+                        </a>
+                    </li>
+                </ol>
+            </li>
+
+            <!-- 21. Ссылка на файл на FTP-сервере с авторизацией -->
+            <li>
+                <a href="ftp://user:password@example.com/file.txt">
+                    Ссылка на файл на FTP-сервере с авторизацией
+                </a>
+            </li>
+
+        </ul>
+    </section>
+
+
+    <!-- ==================================================
+         ФОРМА
+         ================================================== -->
+
+    <section id="form">
+
+        <h2>Форма</h2>
+
+        <form action="/" method="post">
+
+            <!-- 1. ФИО -->
+            <p>
+                <label for="fullname">
+                    ФИО:
+                </label>
+                <br>
+
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Введите ваше ФИО"
+                    required>
+            </p>
+
+
+            <!-- 2. Телефон -->
+            <p>
+                <label for="phone">
+                    Телефон:
+                </label>
+                <br>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+7 999 123-45-67"
+                    required>
+            </p>
+
+
+            <!-- 3. E-mail --><p>
+                <label for="email">
+                    E-mail:
+                </label>
+                <br>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@mail.ru"
+                    required>
+            </p>
+
+
+            <!-- 4. Дата рождения -->
+            <p>
+                <label for="birthdate">
+                    Дата рождения:
+                </label>
+                <br>
+
+                <input
+                    type="date"
+                    id="birthdate"
+                    name="birthdate"
+                    required>
+            </p>
+
+
+            <!-- 5. Пол -->
+            <fieldset>
+                <legend>Пол:</legend>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="male"
+                        required>
+                    Мужской
+                </label>
+
+                <br>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="female">
+                    Женский
+                </label>
+            </fieldset>
+
+
+            <!-- 6. Любимый язык программирования -->
+            <p>
+                <label for="languages">
+                    Любимый язык программирования:
+                </label>
+                <br>
+
+                <select
+                    id="languages"
+                    name="languages[]"
+                    multiple
+                    size="11"
+                    required>
+
+                    <option value="pascal">Pascal</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="haskel">Haskel</option>
+                    <option value="clojure">Clojure</option>
+                    <option value="prolog">Prolog</option>
+                    <option value="scala">Scala</option>
+
+                </select>
+            </p>
+
+
+            <!-- 7. Биография -->
+            <p>
+                <label for="biography">
+                    Биография:
+                </label>
+                <br>
+
+                <textarea
+                    id="biography"
+                    name="biography"
+                    rows="6"
+                    cols="40"
+                    placeholder="Расскажите немного о себе"></textarea>
+            </p>
+
+
+            <!-- 8. Чекбокс -->
+            <p>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="contract"
+                        value="accepted"
+                        required>
+                    С контрактом ознакомлен(а)
+                </label>
+            </p>
+
+
+            <!-- 9. Кнопка -->
+            <p>
+                <button type="submit">
+                    Сохранить
+                </button>
+            </p>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Задание по Web-программированию</p>
+</footer>
