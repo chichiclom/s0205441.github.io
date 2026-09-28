@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивный сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Шапка сайта -->
+<header id="site-header">
+    <div class="header-inner">
+        <div class="logo">Лого</div>
+        <h1 class="site-title">Название сайта</h1>
+    </div>
+</header>
+
+<!-- Навигация -->
+<nav id="main-nav">
+    <ul class="nav-list">
+        <li><a href="#home">Ссылка меню 1</a></li>
+        <li><a href="#about">Ссылка 2</a></li>
+        <li><a href="#contact">Ссылка 3</a></li>
+    </ul>
+</nav>
+
+<!-- Основной контент -->
+<main id="content">
+
+    <!-- Список гиперссылок (в HTML идёт первым, но на мобильном визуально ниже таблицы) -->
+    <section id="links-section" class="content-block">
+        <h2>Список гиперссылок</h2>
+        <ul class="links-list">
+            <li><a href="https://www.w3.org" target="_blank" rel="noopener">W3C — Консорциум Всемирной паутины</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a></li>
+            <li><a href="https://validator.w3.org" target="_blank" rel="noopener">W3C Validator</a></li>
+            <li><a href="https://gitlab.com" target="_blank" rel="noopener">GitLab</a></li>
+            <li><a href="https://moodle.org" target="_blank" rel="noopener">Moodle</a></li>
+        </ul>
+    </section>
+
+    <!-- Таблица (на мобильном визуально выше списка ссылок через order) -->
+    <section id="table-section" class="content-block">
+        <h2>Таблица</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Категория</th>
+                    <th>Товар</th>
+                    <th>Цена</th>
+                    <th>Наличие</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Электроника</td>
+                    <td>Ноутбук</td>
+                    <td>45000 ₽</td>
+                    <td>В наличии</td>
+                </tr>
+                <tr>
+                    <td>Планшет</td>
+                    <td>28000 ₽</td>
+                    <td>Нет</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Аксессуары</td>
+                    <td>Наушники</td>
+                    <td>3500 ₽</td>
+                    <td>В наличии</td>
+                </tr>
+                <tr>
+                    <td>Чехол</td>
+                    <td>900 ₽</td>
+                    <td>В наличии</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Канцелярия</td>
+                    <td>Ручка</td>
+                    <td>150 ₽</td>
+                    <td>В наличии</td>
+                </tr>
+                <tr>
+                    <td>Блокнот</td>
+                    <td>300 ₽</td>
+                    <td>Нет</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Форма -->
+    <section id="form-section" class="content-block">
+        <h2>Форма</h2>
+        <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required
+                       pattern="[^0-9]+"
+                       title="Имя не должно содержать цифры"
+                       oninput="this.value = this.value.replace(/\d/g, '')">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+    </section>
+
+</main>
+
+<!-- Подвал -->
+<footer id="site-footer">
+    <p>&copy; Сергей Синица</p>
+</footer>
+
+</body>
+</html>
