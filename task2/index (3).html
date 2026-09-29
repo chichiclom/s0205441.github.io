@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2 — Веб-страница</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Шапка сайта -->
+<header id="site-header">
+    <div class="header-inner">
+        <div class="logo">Лого</div>
+        <h1 class="site-title">Название сайта</h1>
+        <nav id="main-nav">
+            <ul class="nav-list">
+                <li><a href="#">Ссылка меню 1</a></li>
+                <li><a href="#">Ссылка 2</a></li>
+                <li><a href="#">Ссылка 3</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Основной контент -->
+<main class="content">
+
+    <!-- Список гиперссылок -->
+    <section id="links-section">
+        <h2>Список гиперссылок</h2>
+        <ul class="links-list">
+            <li><a href="https://www.yandex.ru" target="_blank">Яндекс</a></li>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+            <li><a href="https://www.w3.org" target="_blank">W3C</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+        </ul>
+    </section>
+
+    <!-- Таблица -->
+    <section id="table-section">
+        <h2>Таблица</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Категория</th>
+                    <th>Товар</th>
+                    <th>Цена</th>
+                    <th>Наличие</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Электроника</td>
+                    <td>Смартфон</td>
+                    <td>25 000 ₽</td>
+                    <td>В наличии</td>
+                </tr>
+                <tr>
+                    <td>Ноутбук</td>
+                    <td>55 000 ₽</td>
+                    <td>Нет в наличии</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Аксессуары</td>
+                    <td>Наушники</td>
+                    <td>3 500 ₽</td>
+                    <td>В наличии</td>
+                </tr>
+                <tr>
+                    <td>Чехол</td>
+                    <td>800 ₽</td>
+                    <td>В наличии</td>
+                </tr>
+                <tr>
+                    <td>Электроника</td>
+                    <td>Планшет</td>
+                    <td>40 000 ₽</td>
+                    <td>В наличии</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Форма -->
+    <section id="form-section">
+        <h2>Форма</h2>
+        <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required
+                       pattern="[^0-9]+"
+                       title="Поле Имя не должно содержать цифры"
+                       oninput="this.value = this.value.replace(/\d/g, '')">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+    </section>
+
+</main>
+
+<!-- Подвал -->
+<footer id="site-footer">
+    <div class="footer-inner">
+        <p>&copy; Сергей Синица</p>
+    </div>
+</footer>
+
+</body>
+</html>
